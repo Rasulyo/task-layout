@@ -1,0 +1,179 @@
+body {
+    min-height: 100%;
+}
+
+nav {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    width    : 100%;
+}
+
+.nav {
+    display        : flex;
+    justify-content: flex-end;
+    padding-top    : 1rem;
+}
+
+.nav__menu {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.login__logo {
+    width      : 30px;
+    height     : 23px;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.arrow__down {
+    margin-top : -1rem;
+    margin-left: -2rem;
+    color      : #000;
+    width: 10px;
+    height: 10px;
+}
+
+.nav__item>a {
+    text-decoration: none;
+    color          : #444B59;
+    padding        : 0 2rem;
+}
+
+header {
+    display        : flex;
+    justify-content: center;
+}
+
+.header {
+    display        : flex;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.header__auth {
+    width: 40%;
+}
+
+h2 {
+    font-size  : 36px;
+    font-weight: bold;
+}
+
+.header__auth>p {
+    font-size    : 20px;
+    font-weight  : 700;
+    color        : #444B59;
+    margin-bottom: 1rem;
+}
+
+.header__photo {
+    width : 60%;
+    height: 90%;
+}
+
+/* input */
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance   : checkbox;
+    appearance        : checkbox;
+    display           : inline-block;
+    width             : auto;
+    border-radius     : .1875rem;
+
+}
+
+label {
+    color    : #444B59;
+    font-size: 28px;
+    padding  : 1rem 0;
+}
+
+#id_username {
+    width        : 100%;
+    height       : 50px;
+    border       : 2px solid #789ADE;
+    border-radius: 50px;
+    color        : #789ADE;
+    margin       : 0.5rem 0;
+
+    outline: none;
+}
+
+#id_password {
+    height       : 50px;
+    color        : #789ADE;
+    width        : 100%;
+    border       : 2px solid #789ADE;
+    outline      : none;
+    margin       : 0.5rem 0;
+    border-radius: 50px;
+}
+
+.fa-eye {
+    margin-left: 180px;
+}
+
+.btn {
+    width           : 100%;
+    border-radius   : 60px;
+    height          : 60px;
+    outline         : none;
+    font-size       : 28px;
+    background-color: #8699DA;
+    border          : inherit;
+    color           : #fff;
+}
+.sci__list{
+    display: flex;
+    padding: 1rem;
+}
+
+.sci__item{
+    list-style-type: none;
+    padding: 1rem;
+}
+.sci__item:hover{
+    background-color: rgb(163, 163, 163);
+}
+.sci__item > img{
+    transform: scale(0.5);
+    filter: invert(85%);
+}
+@media screen and (max-width: 759px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .header__auth {
+        width: 100%;
+    }
+    .nav__item>a {
+        text-decoration: none;
+        color          : #444B59;
+        padding        : 0 1rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+   
+    .arrow__down {
+        margin-top : -1rem;
+        margin-left: -1rem;
+        color      : #000;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .nav__item>a {
+        text-decoration: none;
+        color          : #444B59;
+        padding        : 0 1rem;
+    }
+}

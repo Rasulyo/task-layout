@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">
+                            English
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#">
+                            Sign up 
+                            <img class="arrow__down" src="./images/Vector.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <a href="./index.html">
+                    <img class="login__logo" src="./images/home.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__auth">
+                    <h2>WELCOME BACK!</h2>
+                    <p>Don’t have a account, Sign up</p>
+                    <form method="post">
+                        <div style="border-radius: 50px;">
+                            <label for="id_username">
+                                Username
+                            </label> 
+                            <br>
+                            <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username"
+                                required="" id="id_username">
+                        </div>
+                            <div>
+                                <label for="id_password">
+                                    Password
+                                </label>
+                                <i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i> <br>
+                                <input type="password" name="password" autocomplete="current-password" required=""
+                                id="id_password">
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                                </div>
+                                <span style="color: #8699DA; cursor: pointer;">Forget password?</span>
+                            </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                    <div>
+                        <div style="display: flex; padding-top: 1rem;"> 
+                            <hr align="left" width="30%" size="2" color="C4C4C4" />
+
+                            <p style="font-size: 20px; color: black/2 5">or continue with</p>
+                            <hr align="right" width="30%" size="2" color="C4C4C4" />
+
+                        </div>
+                        <ul class="sci__list">
+                            <li class="sci__item"><img src="./images/Frame 14.png" alt=""></li>
+                            <li class="sci__item"><img src="./images/Frame 15.png" alt=""></li>
+                            <li class="sci__item"><img src="./images/Frame 16.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="header__photo" src="./images/Image.png" alt="">
+            </div>
+
+        </div>
+    </header>
+
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#id_password');
+
+        togglePassword.addEventListener('click', function (e) {
+            // toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script>
+
+</body>
+
+</html>
