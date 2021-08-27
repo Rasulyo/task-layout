@@ -111,10 +111,14 @@ label {
     outline      : none;
     margin       : 0.5rem 0;
     border-radius: 50px;
+    position: relative;
 }
 
 .fa-eye {
-    margin-left: 180px;
+    margin-top: 20px;
+    margin-left: -30px;
+    position: absolute;
+
 }
 
 .btn {
@@ -130,6 +134,8 @@ label {
 .sci__list{
     display: flex;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .sci__item{
@@ -143,7 +149,7 @@ label {
     transform: scale(0.5);
     filter: invert(85%);
 }
-@media screen and (max-width: 759px) {
+@media screen and (max-width: 768px) {
     .header{
         display: flex;
         flex-direction: column;
@@ -152,12 +158,58 @@ label {
         width: 100%;
     }
     .header__auth {
-        width: 100%;
+        width: 90%;
     }
     .nav__item>a {
         text-decoration: none;
         color          : #444B59;
         padding        : 0 1rem;
+    }
+    .arrow__down {
+        margin-top : -1rem;
+        margin-left: -1rem;
+        color      : #000;
+        width: 10px;
+        height: 10px;
+    }
+
+    label {
+        color    : #444B59;
+        font-size: 22px;
+        padding  : 1rem 0;
+    }
+    #id_username {
+        width        : 100%;
+        height       : 45px;
+    }
+    
+    #id_password {
+        height       : 45px;
+        width        : 100%;
+    }
+    .header__auth {
+        width: 90%;
+    }
+    
+    h2 {
+        font-size  : 30px;
+        font-weight: bold;
+    }
+    
+    .header__auth>p {
+        font-size    : 14px;
+        font-weight  : 700;
+        color        : #444B59;
+    }
+    .btn {
+        width           : 95%;
+        border-radius   : 60px;
+        height          : 45px;
+        outline         : none;
+        font-size       : 20px;
+        background-color: #8699DA;
+        border          : inherit;
+        color           : #fff;
     }
 }
 
@@ -175,5 +227,43 @@ label {
         text-decoration: none;
         color          : #444B59;
         padding        : 0 1rem;
+    }
+    label {
+        color    : #444B59;
+        font-size: 20px;
+        padding  : 1rem 0;
+    }
+    #id_username {
+        width        : 100%;
+        height       : 40px;
+    }
+    
+    #id_password {
+        height       : 40px;
+        width        : 100%;
+    }
+    .header__auth {
+        width: 90%;
+    }
+    
+    h2 {
+        font-size  : 26px;
+        font-weight: bold;
+    }
+    
+    .header__auth>p {
+        font-size    : 14px;
+        font-weight  : 700;
+        color        : #444B59;
+    }
+    .btn {
+        width           : 90%;
+        border-radius   : 60px;
+        height          : 40px;
+        outline         : none;
+        font-size       : 20px;
+        background-color: #8699DA;
+        border          : inherit;
+        color           : #fff;
     }
 }
